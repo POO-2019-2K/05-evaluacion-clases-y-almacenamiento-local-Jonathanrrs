@@ -20,6 +20,7 @@ class Main {
                     nomProducto:  nomProducto,
                     cantProducto:  cantProducto,
                     costoProducto: costoProducto
+                
                 };
 
                 let inventario = new Inventario(objInventario);

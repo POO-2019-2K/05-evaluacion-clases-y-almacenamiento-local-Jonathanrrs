@@ -60,7 +60,7 @@ export default class Agenda {
     addSalidaMercancia(inventario) {
         let found = this._findInventario(inventario.numInventario);
         if(found >= 0) {
-            this._inventarios[found].cantProducto = Number(cantProducto) - Number(cantProducto);
+            this._inventarios[found].cantProducto = this._inventarios[found].cantProducto - inventario.cantProducto;
             localStorage.setItem("inventario", JSON.stringify(this._inventarios));
             let row = this._tablaAgenda.rows[found+1];
             row.cells[2].innerHTML = this._inventarios[found].cantProducto;
@@ -70,7 +70,7 @@ export default class Agenda {
             return;
         }
         localStorage.setItem("inventario", JSON.stringify(this._inventarios));
-        console.log(this.getSalida());
+  
 
     }
 }

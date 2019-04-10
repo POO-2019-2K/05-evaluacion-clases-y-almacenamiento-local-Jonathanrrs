@@ -4,6 +4,7 @@ export default class Inventario {
         this._nomProducto = inventario.nomProducto;
         this._cantProducto = inventario.cantProducto;
         this._costoProducto = inventario.costoProducto;
+       
     }
 
     get numInventario() {
