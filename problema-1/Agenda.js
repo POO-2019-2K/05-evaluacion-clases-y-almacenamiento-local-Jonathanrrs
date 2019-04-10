@@ -69,7 +69,7 @@ export default class Agenda {
             alert('No está registrado');
             return;
         }
-        localStorage.setItem("inventario", JSON.stringify(this._inventarios));
+        localStorage.setItem("inventarios", JSON.stringify(this._inventarios));
   
 
     }
