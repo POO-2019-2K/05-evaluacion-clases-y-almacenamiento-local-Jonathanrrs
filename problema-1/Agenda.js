@@ -64,7 +64,7 @@ export default class Agenda {
             localStorage.setItem("inventario", JSON.stringify(this._inventarios));
             let row = this._tablaAgenda.rows[found+1];
             row.cells[2].innerHTML = this._inventarios[found].cantProducto;
-;        }
+      }
         else{
             alert('No está registrado');
             return;
